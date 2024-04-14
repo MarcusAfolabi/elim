@@ -54,25 +54,49 @@
                 </div>
                 <div class="col-lg-6">
                     <h2 class="m-b-10">Elim Sanctuary Forms </h2>
-                    <a data-target="#modal-2" data-toggle="modal" href="#">
-                        <button type="button" class="btn btn-light">
-                            Fill Workers Form
-                            <i class="icon-clipboard"></i></button>
-                    </a>
-                    <a data-target="#modal-2" data-toggle="modal" href="#">
-                        <button type="button" class="btn btn-light">
-                            Join Redeemers
-                            men fellowship <i class="icon-clipboard"></i></button>
-                    </a>
-                    <a data-target="#modal-2" data-toggle="modal" href="#">
-                        <button type="button" class="btn btn-light">
-                            Choir Membership Card <i class="icon-clipboard"></i></button>
-                    </a>
-                    <a data-target="#modal-2" data-toggle="modal" href="#">
-                        <button type="button" class="btn btn-light">
-                            Testimony Form <i class="icon-clipboard"></i></button>
-                    </a>
+                    <div x-data="{ showSalvationForm: false }">
+                        <button @click="showSalvationForm = !showSalvationForm" class="btn btn-light">
+                            Salvation Form
+                            <i class="icon-clipboard"></i>
+                        </button>
+
+                        <div x-show="showSalvationForm" @click.away="showSalvationForm = false">
+                            @livewire('salavation-form')
+                        </div>
+                    </div>
+                    <div x-data="{ showMenFellowship: false }">
+                        <button @click="showMenFellowship = !showMenFellowship" class="btn btn-light">
+                            Men's Fellowship Form
+                            <i class="icon-clipboard"></i>
+                        </button>
+
+                        <div x-show="showMenFellowship" @click.away="showMenFellowship = false">
+                            @livewire('men-fellowship')
+                        </div>
+                    </div>
+                    <div x-data="{ showTestimonyForm: false }">
+                        <button @click="showTestimonyForm = !showTestimonyForm" class="btn btn-light">
+                            Testimony Form
+                            <i class="icon-clipboard"></i>
+                        </button>
+
+                        <div x-show="showTestimonyForm" @click.away="showTestimonyForm = false">
+                            @livewire('testimony-form')
+                        </div>
+                    </div>
+                    <div x-data="{ showChoirCard: false }">
+                        <button @click="showChoirCard = !showChoirCard" class="btn btn-light">
+                            Choir Membership Form
+                            <i class="icon-clipboard"></i>
+                        </button>
+
+                        <div x-show="showChoirCard" @click.away="showChoirCard = false">
+                            @livewire('choir-card')
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
 </div>

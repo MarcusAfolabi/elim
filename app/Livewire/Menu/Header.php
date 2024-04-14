@@ -17,9 +17,9 @@ class Header extends Component
             [
                 'title' => 'Our Pillars', 'href' => '/pillars', 'class' => 'fa fa-church', 'hasSubmenu' => true,
                 'submenu' => [
-                    ['title' => 'Elim Youth', 'href' => '/elim-youth'],
-                    ['title' => 'Sister of Grace', 'href' => '/sisters-of-grace'],
-                    ['title' => 'Redeemers', 'href' => '/redeemers-men'],
+                    ['title' => 'Elim Youth', 'href' => '#'],
+                    ['title' => 'Sister of Grace', 'href' => '#'],
+                    ['title' => 'Redeemers', 'href' => '#'],
                 ]
             ],
             ['title' => 'Salvation', 'href' => '/salvation', 'class' => 'fas fa-pray', 'hasSubmenu' => false], // Single item without submenu
@@ -32,7 +32,7 @@ class Header extends Component
                     ['title' => 'Grow with a friend', 'href' => '/grow-with-a-friend'],
                     ['title' => 'Testimony', 'href' => '/testimony'],
                     ['title' => 'Gallery', 'href' => '/gallery'],
-                    ['title' => 'Departments', 'href' => '/our-departments'],
+                    ['title' => 'Departments', 'href' => '#'],
                 ]
             ],
         ];

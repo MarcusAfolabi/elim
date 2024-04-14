@@ -3,7 +3,7 @@
         <div class="header-inner">
             <div class="container">
                 <div id="logo">
-                    <a wire:navigate href="/">
+                    <a  href="/">
                         <span><img src="{{ $logo }}" alt="RCCG-ELIMSANCTUARY"></span>
                     </a>
                 </div>
@@ -21,14 +21,14 @@
                                                     class="{{ $item['class'] }}"></i>{{ $item['title'] }}</a>
                                             <ul class="dropdown-menu">
                                                 @foreach ($item['submenu'] as $submenu)
-                                                    <li><a wire:navigate
+                                                    <li><a
                                                             href="{{ $submenu['href'] }}">{{ $submenu['title'] }}</a>
                                                     </li>
                                                 @endforeach
                                             </ul>
                                         </li>
                                     @else
-                                        <li><a wire:navigate href="{{ $item['href'] }}"><i
+                                        <li><a href="{{ $item['href'] }}"><i
                                                     class="{{ $item['class'] }}"></i>{{ $item['title'] }}</a></li>
                                     @endif
                                 @endforeach
