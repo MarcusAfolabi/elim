@@ -71,7 +71,7 @@
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165357571-1"></script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165357571-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -80,7 +80,7 @@
         }
         gtag(' js', new Date());
         gtag('config', 'UA-165357571-1');
-    </script> -->
+    </script>
 
     <!-- Favicon link -->
     <link rel="apple-touch-icon" sizes="57x57" href="images/fav/apple-icon-57x57.png">

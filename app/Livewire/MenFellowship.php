@@ -50,11 +50,10 @@ class MenFellowship extends Component
         ];
         try {
             // Send data via email
-            Mail::to('info@rccg-elimsanctuary.org')->send(new FellowshipRegistrationMail($formData));
+            Mail::to('rccgelimsanctuarylp37@gmail.com')->send(new FellowshipRegistrationMail($formData));
             $this->successMessage = 'Men Fellowship Form well received';
             $this->reset();
             $this->showSuccessModal = true;
-
         } catch (\Throwable $th) {
             info($th->getMessage());
             $this->emit('formError', 'Failed to submit fellowship form. Please try again later.');

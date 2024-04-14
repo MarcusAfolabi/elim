@@ -53,7 +53,7 @@ class ChoirCard extends Component
                 'message' => $this->message
             ];
             // Send data via email
-            Mail::to('info@rccg-elimsanctuary.org')->send(new ChoirFormMail($choirData));
+            Mail::to('rccgelimsanctuarylp37@gmail.com')->send(new ChoirFormMail($choirData));
             $this->successMessage = 'Choir Form well received';
             $this->reset();
             $this->showSuccessModal = true;

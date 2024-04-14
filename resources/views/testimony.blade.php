@@ -30,6 +30,7 @@
                 </div>
             </div>
         </section>
+        @livewire('testimony-list')
     </div>
 
 @endsection

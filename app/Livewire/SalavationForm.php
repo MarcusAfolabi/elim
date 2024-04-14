@@ -40,7 +40,7 @@ class SalavationForm extends Component
                 'phone' => $this->phone,
                 'prayer' => $this->prayer,
             ];
-            Mail::to('info@rccg-elimsanctuary.org')->send(new SalvationMail($salvationData));
+            Mail::to('rccgelimsanctuarylp37@gmail.com')->send(new SalvationMail($salvationData));
             $this->successMessage = 'Salvation Form well received';
             $this->reset();
             $this->showSuccessModal = true;

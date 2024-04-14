@@ -42,7 +42,7 @@ class AppointmentForm extends Component
                 'message' => $this->message
             ];
             // Send data via email
-            Mail::to('info@rccg-elimsanctuary.org')->send(new AppointmentFormMail($appointmentData));
+            Mail::to('rccgelimsanctuarylp37@gmail.com')->send(new AppointmentFormMail($appointmentData));
             $this->successMessage = 'Appointment Form well received';
             $this->reset();
             $this->showSuccessModal = true;

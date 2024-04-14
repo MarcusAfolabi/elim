@@ -12,7 +12,7 @@ class TestimonyForm extends Component
     public $name;
     public $phone;
     public $message;
-    public $successMessage = 'Testimony Form well received';
+    public $successMessage = 'Testimony shared successfully';
     public $showSuccessModal;
     public $errorMessage;
 
@@ -25,19 +25,19 @@ class TestimonyForm extends Component
             'message' => 'required|string|max:1000',
         ]);
         try {
-        $testimonyData = [
-            'name' => $this->name,
-            'phone' => $this->phone,
-            'message' => $this->message
-        ];
-        Mail::to('info@rccg-elimsanctuary.org')->send(new TestimonyMail($testimonyData));
-        // Create a new Testimony instance
-            // $appointment = new Testimony ();
-            // $appointment->name = $this->name;
-            // $appointment->phone = $this->phone;
-            // $appointment->message = $this->message;
-            // $appointment->save();
-            $this->successMessage = 'Testimony Form well received';
+            $testimonyData = [
+                'name' => $this->name,
+                'phone' => $this->phone,
+                'message' => $this->message
+            ];
+            Mail::to('rccgelimsanctuarylp37@gmail.com')->send(new TestimonyMail($testimonyData));
+            // Create a new Testimony instance
+            $appointment = new Testimony();
+            $appointment->name = $this->name;
+            $appointment->phone = $this->phone;
+            $appointment->message = $this->message;
+            $appointment->save();
+            $this->successMessage = 'Testimony shared successfully';
             $this->reset();
             $this->showSuccessModal = true;
         } catch (\Throwable $th) {

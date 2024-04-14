@@ -36,6 +36,20 @@
         </div>
     </section>
     @livewire('media.gallery')
+    <section class="p-b-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="heading-text heading-section mt-5">
+                        <h1>Testimony</h1>
+                        <p>Jesus is the rewarder of diligent workers, read our testimonies and be blessed</p>
+                        <a class="btn" href="{{ url('testimony') }}"><i class="fa fa-tint"></i> Load more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @livewire('testimony-list')
     @livewire('about')
     @livewire('location')
     @livewire('streaming')
