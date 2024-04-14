@@ -6,14 +6,15 @@ use Livewire\Component;
 
 class Pastors extends Component
 {
-    public $pastors = [] ;
+    public $pastors = [];
     public function mount()
     {
         $this->pastors = [
-                // ['name' => 'Our Pastor', 'img' => '/images/pastors/rccg-elim-pastor.png', 'title' => 'Pastor'],
-                // ['name' => 'Our Pastor', 'img' => '/images/pastors/rccg-elim-pastor2.png', 'title' => 'Pastor'],
-                ['name' => 'Our Pastor', 'img' => '/images/pastors/rccg-elim-pastor3.png', 'title' => 'Pastor'],
-                ['name' => 'PST Ben Babafemi Ayanda', 'img' => '/images/pastors/rccg-elim-senior-pastor.png', 'title' => 'Senior Pastor'],
+            ['name' => 'Pastor Ben Babafemi Ayanda', 'img' => '/images/pastors/rccg-elim-senior-pastor.png', 'title' => 'Provincial Pastor'],
+            ['name' => 'Pastor Mrs. Grace Ayanda', 'img' => '/images/pastors/PastorMrsGraceAyanda.png', 'title' => "Pastor's wife"],
+            ['name' => 'Pastor Abayomi Akintan', 'img' => '/images/pastors/PastorAbayomiAkintan.png', 'title' => 'Zonal Pastor'],
+            ['name' => 'Pastor Babatunde Balogun', 'img' => '/images/pastors/rccg-elim-pastor3.png', 'title' => 'Parish Pastor'],
+            ['name' => 'Pastor AP Ogunyemi', 'img' => '/images/pastors/PastorAPOgunyemi.png', 'title' => 'Workers Leader'],
         ];
     }
 
