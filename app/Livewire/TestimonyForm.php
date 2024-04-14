@@ -21,7 +21,7 @@ class TestimonyForm extends Component
         // Validate form data
         $this->validate([
             'name' => 'required|string',
-            'phone' => 'required|numeric|min:11|unique:appointments,phone',
+            'phone' => 'required|numeric|min:11',
             'message' => 'required|string|max:1000',
         ]);
         try {

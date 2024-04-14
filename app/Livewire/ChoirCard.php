@@ -33,8 +33,8 @@ class ChoirCard extends Component
             'backup' => 'required|string',
             'score_song' => 'required|string',
             'genre' => 'required|string',
-            'email' => 'required|email|unique:appointments,email',
-            'phone' => 'required|numeric|min:11|unique:appointments,phone',
+            'email' => 'required|email',
+            'phone' => 'required|numeric|min:11',
             'message' => 'required|string|max:1000',
         ]);
 

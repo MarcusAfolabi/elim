@@ -22,8 +22,8 @@ class AppointmentForm extends Component
         // Validate form data
         $this->validate([
             'name' => 'required|string',
-            'email' => 'required|email|unique:appointments,email',
-            'phone' => 'required|numeric|min:11|unique:appointments,phone',
+            'email' => 'required|email',
+            'phone' => 'required|numeric|min:11',
             'message' => 'required|string|max:1000',
         ]);
 

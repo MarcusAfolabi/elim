@@ -22,8 +22,8 @@ class SalavationForm extends Component
         // Validate form data
         $this->validate([
             'name' => 'required|string',
-            'address' => 'required|unique:salvations,address',
-            'phone' => 'required|numeric|min:11|unique:salvations,phone',
+            'address' => 'required',
+            'phone' => 'required|numeric|min:11',
             'prayer' => 'nullable|string',
         ]);
 
